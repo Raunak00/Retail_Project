@@ -1,2 +1,24 @@
-pipeline{agentanystages{stage('Build'){steps{echo"buildcompletedsuccessful"}}stage('Test'){steps{
-echo"testcompletedsuccessful"}}stage('Package'){steps{echo"packagecompletedsuccessful"}}stage('Deploy'){steps{echo"deploycompletedsuccessful"}}}}
+pipeline{
+    agent any
+    
+    stages{
+        stage('Build'){
+            steps{
+                echo"buildcompletedsuccessful"
+                }
+            }stage('Test'){
+                steps{
+echo"testcompletedsuccessful"
+}
+}
+stage('Package'){
+    steps{
+        echo"packagecompletedsuccessful"
+        }
+        }stage('Deploy'){
+            steps{
+                echo"deploycompletedsuccessful"
+                }
+                }
+                }
+                }
